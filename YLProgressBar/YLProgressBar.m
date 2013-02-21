@@ -239,7 +239,7 @@
 
 //        size_t num_locations            = 2;
         CGFloat locations[]             = {0.0, 1.0};
-        CFArrayRef colors = (CFArrayRef) [NSArray arrayWithObjects:(id)_progressTintColorDark.CGColor,
+        CFArrayRef colors = (__bridge CFArrayRef) [NSArray arrayWithObjects:(id)self.progressTintColor.CGColor,
                                           (id)self.progressTintColor.CGColor, 
                                           nil];
         
